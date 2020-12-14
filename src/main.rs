@@ -24,7 +24,7 @@ async fn main() -> std::io::Result<()> {
             .service(web::scope("/app").route("/index.html", web::get().to(index)))
 		})
 
-	.bind_openssl("191.101.207.193:443", builder)?
+	.bind_openssl("127.0.0.1:443", builder)?
 	.run()
 	.await
 }
