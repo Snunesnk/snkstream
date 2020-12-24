@@ -1,0 +1,13 @@
+/home/simon/snkstream/web-server/target/rls/debug/deps/actix_connect-500a3bcff30cce9f.rmeta: /home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/lib.rs /home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/connect.rs /home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/connector.rs /home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/error.rs /home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/resolve.rs /home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/service.rs /home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/ssl/mod.rs /home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/ssl/openssl.rs /home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/uri.rs
+
+/home/simon/snkstream/web-server/target/rls/debug/deps/actix_connect-500a3bcff30cce9f.d: /home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/lib.rs /home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/connect.rs /home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/connector.rs /home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/error.rs /home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/resolve.rs /home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/service.rs /home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/ssl/mod.rs /home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/ssl/openssl.rs /home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/uri.rs
+
+/home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/lib.rs:
+/home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/connect.rs:
+/home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/connector.rs:
+/home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/error.rs:
+/home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/resolve.rs:
+/home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/service.rs:
+/home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/ssl/mod.rs:
+/home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/ssl/openssl.rs:
+/home/simon/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-connect-2.0.0/src/uri.rs:
