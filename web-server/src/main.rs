@@ -3,13 +3,19 @@ use openssl::ssl::{SslAcceptor, SslFiletype, SslMethod};
 use std::fs;
 
 async fn index() -> impl Responder {
-    let html = fs::read_to_string("../front/index.html").expect("Oops an error occured.");
+    let html = fs::read_to_string("../front/Vues/index.html").expect("Oops an error occured.");
 
     HttpResponse::Ok().body(html)
 }
 
 async fn indexjs() -> impl Responder {
-    let html = fs::read_to_string("../front/index.js").expect("Oops an error occured.");
+    let html = fs::read_to_string("../front/Scripts/index.js").expect("Oops an error occured.");
+
+    HttpResponse::Ok().body(html)
+}
+
+async fn btnstylesheet() -> impl Responder {
+    let html = fs::read_to_string("../front/Stylesheets/button.css").expect("Oops an error occured.");
 
     HttpResponse::Ok().body(html)
 }
@@ -43,6 +49,7 @@ async fn main() -> std::io::Result<()> {
         App::new()
             .route("/", web::get().to(index))
             .route("/index.js", web::get().to(indexjs))
+            .route("/button.css", web::get().to(btnstylesheet))
     })
     .bind("127.0.0.1:4242")?
     .run()
