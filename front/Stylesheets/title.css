@@ -1,0 +1,39 @@
+@import "https://fonts.googleapis.com/css?family=Share+Tech+Mono";
+#title {
+    font-family: "Share Tech Mono", monospace;
+    color: #6F2232;
+    font-size: 3vh;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#title::before,
+#title::after {
+    content: '';
+    display: block;
+    height: 0.09em;
+    min-width: 42vh;
+    margin-bottom: -7vh;
+}
+
+#title::before {
+    background: linear-gradient(to right, rgba(240, 240, 240, 0), #6F2232);
+    margin-right: 4vh;
+}
+
+#title::after {
+    background: linear-gradient(to left, rgba(240, 240, 240, 0), #6F2232);
+    margin-left: 4vh;
+}
+
+.sexy_hr {
+    display: block;
+    border: none;
+    color: white;
+    height: 1vh !important;
+    background: black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#4E4E50), to(#1A1A1D));
+}

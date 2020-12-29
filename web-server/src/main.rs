@@ -8,14 +8,26 @@ async fn index() -> impl Responder {
     HttpResponse::Ok().body(html)
 }
 
-async fn indexjs() -> impl Responder {
+async fn index_js() -> impl Responder {
     let html = fs::read_to_string("../front/Scripts/index.js").expect("Oops an error occured.");
 
     HttpResponse::Ok().body(html)
 }
 
-async fn btnstylesheet() -> impl Responder {
+async fn btn_stylesheet() -> impl Responder {
     let html = fs::read_to_string("../front/Stylesheets/button.css").expect("Oops an error occured.");
+
+    HttpResponse::Ok().body(html)
+}
+
+async fn background_stylesheet() -> impl Responder {
+    let html = fs::read_to_string("../front/Stylesheets/background.css").expect("Oops an error occured.");
+
+    HttpResponse::Ok().body(html)
+}
+
+async fn title_stylesheet() -> impl Responder {
+    let html = fs::read_to_string("../front/Stylesheets/title.css").expect("Oops an error occured.");
 
     HttpResponse::Ok().body(html)
 }
@@ -48,8 +60,10 @@ async fn main() -> std::io::Result<()> {
     HttpServer::new(|| {
         App::new()
             .route("/", web::get().to(index))
-            .route("/index.js", web::get().to(indexjs))
-            .route("/button.css", web::get().to(btnstylesheet))
+            .route("/index.js", web::get().to(index_js))
+            .route("/button.css", web::get().to(btn_stylesheet))
+            .route("/background.css", web::get().to(background_stylesheet))
+            .route("/title.css", web::get().to(title_stylesheet))
     })
     .bind("127.0.0.1:4242")?
     .run()
