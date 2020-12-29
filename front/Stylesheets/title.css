@@ -1,7 +1,15 @@
 @import "https://fonts.googleapis.com/css?family=Share+Tech+Mono";
+h1 {
+    font-size: 4.2em;
+    text-align: center;
+    padding: 5vh 0 0 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
 #title {
     font-family: "Share Tech Mono", monospace;
-    color: #6F2232;
+    color: #C2B9B0;
     font-size: 3vh;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);
     display: flex;

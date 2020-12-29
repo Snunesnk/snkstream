@@ -1,13 +1,5 @@
 /* Heading */
 
-h1 {
-    font-size: 4.2em;
-    text-align: center;
-    padding: 70px 0 0 0;
-    font-weight: 300;
-    letter-spacing: 1px;
-}
-
 span {
     border: 2px solid #4F5D75;
     padding: 10px;
@@ -31,19 +23,19 @@ span {
 
 .button {
     display: inline-flex;
-    height: 6vh;
-    width: 23vh;
+    height: 10vh;
+    width: 30vh;
     border: 2px solid #6F2232;
     margin: 20px 20px 20px 20px;
     color: #BFC0C0;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: .8em;
+    font-size: 1.3em;
     letter-spacing: 1.5px;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    border-radius: 26px;
+    border-radius: 6vh;
 }
 
 a {
@@ -74,7 +66,7 @@ a {
     top: -30px;
     background: #6F2232;
     position: absolute;
-    transition: all .3s ease-Out;
+    transition: all .15s ease-Out;
 }
 
 .button-5:hover .translate {
@@ -101,6 +93,7 @@ a {
 .btn_icon {
     margin-left: -3vh;
     margin-right: 2.5vh;
+    z-index: 10;
 }
 
 .double_btn {
