@@ -56,10 +56,10 @@ async fn main() -> std::io::Result<()> {
     })
     
     //This is for prod site 
-    //.bind_openssl("127.0.0.1:4242", builder)?
+    .bind_openssl("127.0.0.1:4242", builder)?
 
     //This is for local test
-    .bind("127.0.0.1:4242")?
+    //.bind("127.0.0.1:4242")?
     
     .run()
     .await
