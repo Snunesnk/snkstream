@@ -39,12 +39,11 @@ async fn title_stylesheet() -> impl Responder {
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
-    //This is without openssl, for test purposes
     let mut builder = SslAcceptor::mozilla_intermediate(SslMethod::tls()).unwrap();
     builder
-        .set_private_key_file("key.pem", SslFiletype::PEM)
+        .set_private_key_file("privkey.pem", SslFiletype::PEM)
         .unwrap();
-    builder.set_certificate_chain_file("cert.pem").unwrap();
+    builder.set_certificate_chain_file("fullchain.pem").unwrap();
 
     HttpServer::new(|| {
         App::new()
@@ -54,13 +53,7 @@ async fn main() -> std::io::Result<()> {
             .route("/background.css", web::get().to(background_stylesheet))
             .route("/title.css", web::get().to(title_stylesheet))
     })
-    
-    //This is for prod site 
     .bind_openssl("127.0.0.1:4242", builder)?
-
-    //This is for local test
-    //.bind("127.0.0.1:4242")?
-    
     .run()
     .await
 }
