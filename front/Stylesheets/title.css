@@ -10,12 +10,35 @@ h1 {
 #title {
     font-family: "Share Tech Mono", monospace;
     color: #C2B9B0;
-    font-size: 3vh;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+}
+
+/*###Desktops, big landscape tablets and laptops(Large, Extra large)####*/
+@media screen and (min-width: 1024px){
+	#title {
+		font-size: 3vh;
+		margin-top: -7vh
+	}
+}
+
+/*###Tablet(medium)###*/
+@media screen and (min-width : 768px) and (max-width : 1023px){
+	#title {
+		font-size: 3vh;
+		margin-top: -7vh
+	}
+}
+
+/*### Smartphones (portrait and landscape)(small)### */
+@media screen and (min-width : 0px) and (max-width : 767px){
+	#title {
+		font-size: 1.7vh;
+		margin-top: -3vh
+	}
 }
 
 #title::before,

@@ -1,11 +1,11 @@
-use actix_web::{web, App, HttpResponse, HttpServer, Responder, guard};
+use actix_web::{web, App, HttpResponse, HttpServer, HttpRequest, Responder, guard};
 use openssl::ssl::{SslAcceptor, SslFiletype, SslMethod};
 use std::fs;
 use actix_files as act_fs;
 use actix_web::error::Result as act_Result;
 
-async fn not_found() -> impl Responder {
-    println!("Cannot access given URL\n");
+async fn not_found(req: HttpRequest) -> impl Responder {
+    println!("Cannot access given URL for request: {:?}.\n", req);
     HttpResponse::Ok().content_type("text/html").body("URL not found")
 }
 
