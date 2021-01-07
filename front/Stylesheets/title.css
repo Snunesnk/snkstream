@@ -18,18 +18,30 @@ h1 {
 }
 
 /*###Desktops, big landscape tablets and laptops(Large, Extra large)####*/
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1000px){
 	#title {
 		font-size: 3vh;
 		margin-top: -7vh
 	}
+
+	.sexy_hr {
+		margin-top: -9vh;
+		margin-bottom: 9vh;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#4E4E50), to(#1A1A1D));
+	}
 }
 
 /*###Tablet(medium)###*/
-@media screen and (min-width : 768px) and (max-width : 1023px){
+@media screen and (min-width : 768px) and (max-width : 999px){
 	#title {
 		font-size: 3vh;
 		margin-top: -7vh
+	}
+
+	.sexy_hr {
+		margin-top: -9vh;
+		margin-bottom: 9vh;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#4E4E50), to(#1A1A1D));
 	}
 }
 
@@ -38,6 +50,12 @@ h1 {
 	#title {
 		font-size: 1.7vh;
 		margin-top: -3vh
+	}
+
+	.sexy_hr {
+		margin-top: -3vh;
+		margin-bottom: 4vh;
+    	background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 150, from(#4E4E50), to(#1A1A1D));
 	}
 }
 
@@ -65,6 +83,4 @@ h1 {
     border: none;
     color: white;
     height: 1vh !important;
-    background: black;
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#4E4E50), to(#1A1A1D));
 }
