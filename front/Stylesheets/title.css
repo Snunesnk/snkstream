@@ -2,7 +2,7 @@
 h1 {
     font-size: 4.2em;
     text-align: center;
-    padding: 5vh 0 0 0;
+    padding: 9vh 0 0 0;
     font-weight: 300;
     letter-spacing: 1px;
 }
@@ -25,7 +25,7 @@ h1 {
 	}
 
 	.sexy_hr {
-		margin-top: -9vh;
+		margin-top: -2vh;
 		margin-bottom: 9vh;
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#4E4E50), to(#1A1A1D));
 	}
